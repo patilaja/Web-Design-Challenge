@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <title>COVID19 Death Data</title>
+</head>
+
+<body>
+    <div id="includedContent"></div>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+            <div class="container">
+                <h2><a class="navbar-brand mr-4" href="/"><img src="assets/images/covid19.png" class="logo">COVID19-NJ</a></h2>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+                    aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggle">
+                    <div class="navbar-nav mr-auto">
+                        <a class="nav-item nav-link" href="/">Home</a>
+                    </div>
+                    <!-- Navbar Right Side -->
+                    <div class="navbar-nav">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Plots
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="bergenCounty.html">Bergen County</a>
+                                    <a class="dropdown-item" href="middlesexCounty.html">Middlesex County</a>
+                                    <a class="dropdown-item" href="salemCounty.html">Salem County</a>
+                                    <a class="dropdown-item" href="capemayCounty.html">Cape May County</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Data
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="casedata.html">Positive Case Count</a>
+                                    <a class="dropdown-item" href="deathdata.html">Death Case Count</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="nav-item nav-link" href="compare.html">Comparison</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col col-lg-8 col-12">
+                <div class="content-section">
+                    <h5>COVID19 Cumulative Deaths Summary</h5>
+                    <hr>
+                    <p class='text-muted'>Bergen and Essex counties reported the highest number of positive cases. Graph shows a significantly higher death count for these two counties comapred four other counties - Essex, Passaic, Union and Middlesex that reported significantly higher positive cases.
+
+                        </p>
+                    <p class='text-muted'>The chart also shows when the peak of the pandemic was occuring in the several counties and includes the highest amount of deaths that had occurred till 5/10.
+                        <img src="assets\images\deathsCounty.png" class="col" /></p>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-12">
+                <div class="content-section">
+                    <h6>Visualizations</h6>
+                    <hr>
+                    <p class="text-muted">
+                    <div class="row">
+                        <div class='text-muted'>Bergen<br><a href="bergenCounty.html"><img src="assets\images\bergenCounty.png"
+                                    class="imgthumb" /></a></div>
+                        <div class='text-muted'>Bergen (Log Scale)<br><a href="bergenCounty.html"><img
+                                    src="assets\images\bergenCountylog.png" class="imgthumb" /></a></div>
+                        <div class='text-muted'>Middlesex<br><a href="middlesexCounty.html"><img
+                                    src="assets\images\middlesexCounty.png" class="imgthumb" /></a></div>
+                        <div class='text-muted'>Middlesex (Log Scale)<br><a href="middlesexCounty.html"><img
+                                    src="assets\images\middlesexCountylog.png" class="imgthumb" /></a></div>
+                        <div class='text-muted'>Salem<br><a href="salemCounty.html"><img src="assets\images\salemCounty.png"
+                                    class="imgthumb" /></a></div>
+                        <div class='text-muted'>Salem (Log Scale)<br><a href="salemCounty.html"><img
+                                    src="assets\images\salemCountylog.png" class="imgthumb" /></a></div>
+                        <div class='text-muted'>Cape May<br><a href="capemayCounty.html"><img
+                                    src="assets\images\capemayCounty.png" class="imgthumb " /></a></div>
+                        <div class='text-muted'>Cape May (Log Scale)<br><a href="capemayCounty.html"><img
+                                    src="assets\images\capemayCountylog.png" class="imgthumb " /></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
